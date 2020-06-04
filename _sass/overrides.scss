@@ -1,0 +1,19 @@
+.site-footer img:hover {
+    opacity: 100%;
+}
+
+.site-footer {
+    border-top: 1px solid #eeebee;
+    padding-top: 12px;
+}
+.site-footer img {
+    width: 136px;
+    margin-top: 10px;
+    margin-left: 18px;
+    margin-right: auto;
+    opacity: 60%;
+}
+
+.bigTable td,th {
+    min-width: 0;
+}
