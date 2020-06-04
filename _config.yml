@@ -32,6 +32,7 @@ logo: "/assets/img/compgen-cgpipe.png"
 #logo: "/assets/img/compgen-logo-io-clear-90-cgpipe.png"
 
 # Build settings
+remote_theme: pmarsceill/just-the-docs
 theme: "just-the-docs"
 plugins:
   - jekyll-feed
