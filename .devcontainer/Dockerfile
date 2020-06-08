@@ -23,7 +23,8 @@ EXPOSE 4000/tcp
 VOLUME /data
 #WORKDIR /data
 
-ENTRYPOINT [ "bundle", "exec", "jekyll", "build" ]
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 
 #ENTRYPOINT [ "bundle", "exec", "jekyll", "serve", "-H", "0.0.0.0" ]
 #ENTRYPOINT /bin/bash

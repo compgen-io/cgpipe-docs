@@ -1,1 +1,1 @@
-docker build -t jtd-docker:latest . 
+docker build -t compgen/jtd-docker:latest . 
