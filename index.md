@@ -25,7 +25,7 @@ However, the major motivation was the desire to the the writing and use of compl
 
     $ ./rnaseq --fq1 input_R1.fastq --fq2 input_R2.fastq --ref GRCh38.fa --output sample1/
 
-This is type of dataflow that cgpipe was written to support. With this as the model, cgpipe has refined over the years to process hundreds of thousands of jobs. If this is something that you need for data pipeline work, give it a try.
+CGpipe was written to support this type of workflow. With this as the model, cgpipe has been refined over the years and has processed hundreds of thousands of jobs. If this is something that you need for data pipeline work, give it a try.
 
 If you have any questions or find any issues with cgpipe, please [contact](https://compgen.io/contact) me!  
 (Or submit an [issue](https://github.com/compgen-io/cgpipe/issues) on github!)
