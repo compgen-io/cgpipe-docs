@@ -3,9 +3,9 @@ FROM debian:10
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
 
-ARG USERNAME=user
-ARG USER_UID=1000
-ARG USER_GID=$USER_UID
+#ARG USERNAME=user
+#ARG USER_UID=1000
+#ARG USER_GID=$USER_UID
 
 
 RUN apt-get update \
@@ -21,7 +21,9 @@ ENV DEBIAN_FRONTEND=dialog
 
 EXPOSE 4000/tcp
 VOLUME /data
-WORKDIR /data
+#WORKDIR /data
+
+ENTRYPOINT [ "bundle", "exec", "jekyll", "build" ]
 
 #ENTRYPOINT [ "bundle", "exec", "jekyll", "serve", "-H", "0.0.0.0" ]
 #ENTRYPOINT /bin/bash

@@ -2,7 +2,9 @@
 layout: page
 title: Language syntax
 permalink: /docs/syntax
-nav_order: 4
+nav_order: 14
+subsite_nav: true
+
 ---
 
 # Language syntax

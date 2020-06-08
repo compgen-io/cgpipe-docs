@@ -22,7 +22,7 @@ CGpipe can be run either from the command-line (`cgpipe mypipeline.cgp`). Or, it
     #!/usr/bin/env cgpipe
     print "Hello pipeline!"
 
-> *Note: In most cases, you won't be executing cgpipe directly. Instead, you'll be writing pipeline scripts in cgpipe, and **those** are what you'll execute.*
+> *In most cases, you won't be executing cgpipe directly. Instead, you'll be writing pipeline scripts in cgpipe, and **those** are what you'll execute.*
 
 
 ## Configuring cgpipe
@@ -49,4 +49,4 @@ All of these configuration files are themselves cgpipe scripts that are 'include
 can still set the cgpipe runner config from `$CGPIPE_HOME/.cgpiperc` by setting the `job.runner` config values. But, you can also
 use if/then/endif blocks to set system specifc values. The cgpiperc files are full scripts that are interpretted, so you can make them quite customizeable.
 
-> *Note: I've actually had to do this. I had a network drive was mounted on two different clusters. One was CentOS 6 running PBS, the other was CentOS 7 running SGE. Jobs ran on both.*
+> *I've actually had to do this. We had a network drive that was shared between two different clusters. One was running CentOS 6 + PBS, the other was CentOS 7 + SGE. And, of course, the same pipelines had to be able to run on both clusters.*

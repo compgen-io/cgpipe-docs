@@ -3,7 +3,10 @@ layout: default
 title: Tutorials
 permalink: /docs/tutorials
 has_children: true
-nav_order: 6
+nav_order: 100
+nav_gap: true
+subsite_nav: true
+
 ---
 
 # Tutorials

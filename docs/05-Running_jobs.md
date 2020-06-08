@@ -2,7 +2,9 @@
 layout: page
 title: Job scheduling
 permalink: /docs/running-jobs
-nav_order: 5
+nav_order: 15
+subsite_nav: true
+
 ---
 
 # Pipeline backends (batch schedulers)

@@ -1,10 +1,13 @@
 ---
 layout: page
-title:  Help!
-permalink: /contact
+title:  Contact / Help
+external_url: https://compgen.io/contact
 nav_order: 10002
----
+nav_gap: true
+search_exclude: true
 
+---
+<!--
 # Help!
 
 For help or questions about cgpipe, please contact:
@@ -16,3 +19,4 @@ marcus.breese@ucsf.edu
 * [Code repository](https://github.com/compgen-io/cgpipe)
 * [Github issues](https://github.com/compgen-io/cgpipe/issues)
 
+-->
