@@ -1,0 +1,26 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Deploy
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy parent repo
+      run: |
+        curl --request POST \
+        --url https://${{secrets.DEPLOY_USERNAME}}:${{secrets.DEPLOY_TOKEN}}@api.github.com/repos/compgen-io/compgen-io-site/dispatches \
+        --header 'content-type: application/json' \
+        --data '{
+          "event_type": "docs-deploy",
+          "client_payload": {
+              "src_repo": "${{ github.repository }}"
+            }
+          }'
